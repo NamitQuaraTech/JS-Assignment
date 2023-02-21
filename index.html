@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Exercise</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>JS Exercise 1</h1>
+    <hr />
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name" required/>
+    <br /><br />
+    <label for="date">DOB: </label>
+    <input type="date" name="dob" id="dob" required/>
+    <br /><br />
+    <label for="gender">Gender: </label>
+    <label for="Male">Male</label>
+    <input type="radio" name="gender" value="Male" id="gender" checked/>
+    <label for="Female">Female</label>
+    <input type="radio" name="gender" value="Female" id="gender" />
+    <br /><br />
+    <label for="skills">Skills: </label>
+    <select name="skills" multiple id="skills" required>
+      <option value="Html">HTML</option>
+      <option value="Css">CSS</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Java">JAVA</option>
+    </select>
+    <br /><br />
+    <label for="hobbies" id="hobbies">Hobbies: </label>
+    <label for="cricket">Cricket</label>
+    <input type="checkbox" name="cricket" value="Cricket" checked/>
+    <label for="tennis">Tennis</label>
+    <input type="checkbox" name="tennis" value="Tennis" />
+    <br />
+    <br />
+    <input type="submit" name="add" value="Add/Update" />
+</form>
+    <br><br>
+    <div class="students-table">
+      <table class="list" id="studentList">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Skills</th>
+            <th>Hobbies</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
